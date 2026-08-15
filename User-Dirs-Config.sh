@@ -21,4 +21,4 @@ pacman -S --noconfirm xdg-user-dirs
 HOME=/mnt/home/$username XDG_CONFIG_HOME=/mnt/home/$username/.config xdg-user-dirs-update --force
 
 #give ownship of directories to user
-arch-chroot /mnt /bin/bash -c "chown -R $username:$username /home/$username
+arch-chroot /mnt /bin/bash -c "chown -R $username:$username /home/$username"
