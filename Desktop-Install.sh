@@ -11,9 +11,7 @@
 # This script could cause damage to your system.
 # This is an automated script and will perform functions without warining or user interaction. 
 # This script is also hard coded to function with my personal system. USE AT OWN RISK. 
-
-## RUN THIS SCRIPT AFTER ARCH INSTALLED AND SUCCESSFULK REBOOT
-
+arch-chroot /mnt /bin/bash -c "
 # Install Video Drivers
 sudo pacman -S --noconfirm --needed linux-headers nvidia-open
 
@@ -24,6 +22,6 @@ sudo pacman -S --noconfirm --needed pipewire pipewire-alsa pipewire-pulse
 sudo pacman -S --noconfirm --needed hyprland
 
 # Install Applications.
-sudo pacman -S --noconfirm --needed alacritty waybar wofi brave-bin
-
+sudo pacman -S --noconfirm --needed alacritty waybar wofi
+"
 
